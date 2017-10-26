@@ -1,0 +1,163 @@
+body {
+  min-width: 960px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  background: #242424 url("../img/main_background.jpg") no-repeat center top;
+  color: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+.main-header {
+  margin-bottom: 60px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+.main-header .main-navigation {
+  max-width: 780px;
+  float: left;
+}
+
+.main-navigation a {
+
+  display: block;
+  padding: 25px 20px;
+  color: #fff;
+  text-decoration: none;
+
+  }
+
+.main-navigation a:hover {
+  background: #242424;
+}
+
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+
+}
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  }
+
+.user-block {
+  max-width: 140px;
+  float: right;
+}
+.login {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px 20px;
+  padding-left: 50px;
+}
+
+.login::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #000;
+}
+
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+
+.features {
+  margin-bottom: 80px;
+}
+.features .features-item {
+  max-width: 300px;
+  margin-right: 20px;
+  float: left;
+}
+.features .features-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+
+.index-content
+{
+  margin-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  background: url("../img/pattern-light.jpg") repeat;
+
+}
+
+.index-content-left {
+  width: 400px;
+  float: left;
+
+}.index-content-right {
+  width: 340px;
+  float: right;
+
+}
+
+
+.main-footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #000;
+  color: #fff;
+}
+
+.footer-contacts {
+  width: 320px;
+  float: left;
+   margin-right: 60px;
+
+}
+
+.footer-social {
+  width: 180px;
+  float: left;
+
+}
+
+.footer-copiright {
+  width: 180px;
+  float: right;
+
+}
+
