@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -30,102 +31,104 @@
         </ul>
       </nav>
       <div class="user-block">
-        <a href="#">Вход</a>
+        <a href="#" class="login">Вход</a>
       </div>
     </div>
   </header>
 
-<main class="container clearfix">
-  <div class="index-logo">
-    <img src="img/Logo.png" alt="" width="368px" height="204px">
-  </div>
-  <section class="features clearfix">
-    <div class="features-item">
-      <b class="features-name">Быстро</b>
-      <p>Мы делаем свою работу быстро! два часа пролетят незаметно и вы счастливый обладатель стильной стрижки-минутки</p>
+  <main class="container">
+    <div class="index-logo">
+      <img src="img/Logo.png" alt="" width="368px" height="204px">
     </div>
-    <div class="features-item">
-      <b class="features-name">Круто</b>
-      <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-    </div>
+    <section class="features clearfix">
       <div class="features-item">
-      <b class="features-name">Дорого</b>
-      <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
-    </div>
-  </section>
+        <b class="features-name">Быстро</b>
+        <p>Мы делаем свою работу быстро! два часа пролетят незаметно и вы счастливый обладатель стильной стрижки-минутки</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Круто</b>
+        <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+      </div>
+        <div class="features-item">
+        <b class="features-name">Дорого</b>
+        <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+      </div>
+    </section>
 
-  <div class="index-content clearfix">
-    <div class="index-content-left">
-      <h2 class="index-content-title">Новости</h2>
-      <ul class="news-preview">
-        <li>
-          <p>Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
-          <time datetime="2016-01-11">11 января</time>
-        </li>
-        <li>
-          <p>В нашей команде пополнение, борис «бритва» стригунец, обладетель множества титулов и наград пополнил наши стройные ряды</p>
-          <time datetime="2016-01-18">18 января</time>
-        </li>
-      </ul>
-      <a href="#" class="btn">Все новости</a>
+    <div class="index-content clearfix">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Новости</h2>
+        <ul class="news-preview">
+          <li>
+            <p>Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="2016-01-11">11 января</time>
+          </li>
+          <li>
+            <p>В нашей команде пополнение, борис «бритва» стригунец, обладетель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2016-01-18">18 января</time>
+          </li>
+        </ul>
+        <a href="#" class="btn">Все новости</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Фотогаллерея</h2>
+        <figure class="gallery-content">
+          <img src="img/index_gallery_img.jpg" alt="Заглушка">
+        </figure>
+        <button class="btn gallery-prev" type="button">Назад</button>
+        <button class="btn gallery-next" type="button">Вперед</button>
+      </div>
     </div>
-    <div class="index-content-right">
-      <h2>Фотогаллерея</h2>
-      <figure class="gallery-content">
-        <img src="img/blank_img.jpg" alt="Заглушка">
-      </figure>
-      <button class="btn gallery-prev" type="button">Назад</button>
-      <button class="btn gallery-next" type="button">Вперед</button>
+    <div class="index-content clearfix">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Контактная информация</h2>
+        <p>
+          Барбершоп «бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          Телефон: +7 (495) 666-02-66</p>
+        <p>
+          Время работы: <br>
+          ПН — ПТ: С 10:00 до 22:00<br>
+          СБ — ВС: С 10:00 до 19:00</p>
+        <a href="#" class="btn">Как проехать</a>
+        <a href="#" class="btn">Обратная связь</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Записаться</h2>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+        <form>
+          <input type="text" name="date" id="date" placeholder="Дата">
+          <input type="text" name="time" id="time" placeholder="Время">
+          <input type="text" name="name" id="name" placeholder="Ваше имя">
+          <input type="tel" name="phone" id="phone" placeholder="Телефон">
+          <button type="submit" class="btn btn-submit">Отправить</button>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="index-content">
-    <div class="index-content-left">
-      <h2 class="index-content-title">Контактная информация</h2>
-      <p>
-        Барбершоп «бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        Телефон: +7 (495) 666-02-66</p>
-      <p>
-        ВРЕМЯ РАБОТЫ: <br>
-        ПН — ПТ: С 10:00 ДО 22:00<br>
-        СБ — ВС: С 10:00 ДО 19:00</p>
-    </div>
-    <div class="index-content-right">
-      <h2 class="index-content-title">Записаться</h2>
-      <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-      <form>
-        <input type="text" name="date" id="date" placeholder="Дата">
-        <input type="text" name="time" id="time" placeholder="Время">
-        <input type="text" name="name" id="name" placeholder="Ваше имя">
-        <input type="tel" name="phone" id="phone" placeholder="Телефон">
-        <button type="submit" class="btn btn-submit">Отправить</button>
-      </form>
-    </div>
-  </div>
-</main>
+  </main>
 
-<footer class="main-footer">
-  <div class="container clearfix">
-    <div class="footer-block footer-contacts">
-    <p>
-      Barbershop «Borodinski»<br>
-      Адрес: г. санкт-петербург, ул. собаки павлова, д. 13<br>
-      <a href="#">как нас найти?</a><br>
-      Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a>
-    </p>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <div class="footer-block footer-contacts">
+      <p>
+        Barbershop «Borodinski»<br>
+        Адрес: г. санкт-петербург, ул. собаки павлова, д. 13<br>
+        <a href="#">как нас найти?</a><br>
+        Телефон: <a href="tel:+74956660266">+7 (495) 666-02-66</a>
+      </p>
+      </div>
+      <div class="footer-block footer-social">
+        <p>Давайте дружить!</p>
+        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+      </div>
+      <div class="footer-block footer-copiright">
+        <p>Разработано:</p>
+        <a href="#" class="btn">htmlacademy.ru</a>
+      </div>
     </div>
-    <div class="footer-block footer-social">
-      <p>Давайте дружить!</p>
-      <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-      <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-      <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-    </div>
-    <div class="footer-block footer-copiright">
-      <p>Разработано:</p>
-      <a href="#" class="btn">htmlacademy.ru</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
 </html>
