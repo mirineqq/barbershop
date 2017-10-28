@@ -72,11 +72,13 @@
       </div>
       <div class="index-content-right">
         <h2 class="index-content-title">Фотогаллерея</h2>
-        <figure class="gallery-content">
-          <img src="img/index_gallery_img.jpg" alt="Заглушка">
-        </figure>
-        <button class="btn gallery-prev" type="button">Назад</button>
-        <button class="btn gallery-next" type="button">Вперед</button>
+        <div class="gallery">
+          <figure class="gallery-content">
+            <img src="img/index_gallery_img.jpg" alt="Заглушка">
+          </figure>
+          <button class="btn gallery-prev" type="button" disabled>Назад</button>
+          <button class="btn gallery-next" type="button">Вперед</button>
+        </div>
       </div>
     </div>
     <div class="index-content clearfix">
@@ -96,7 +98,7 @@
       <div class="index-content-right">
         <h2 class="index-content-title">Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form>
+        <form class="appointment-form">
           <input type="text" name="date" id="date" placeholder="Дата">
           <input type="text" name="time" id="time" placeholder="Время">
           <input type="text" name="name" id="name" placeholder="Ваше имя">
